@@ -11,10 +11,7 @@
     "type": "git",
     "url": "https://github.com/ZhixianKwok/js-utils.git"
   },
-  "keywords": [
-    "utils",
-    "工具库"
-  ],
+  "keywords": ["utils", "工具库"],
   "author": "guozhixian",
   "license": "ISC",
   "devDependencies": {
@@ -25,5 +22,9 @@
     "lint-staged": "^13.0.3",
     "rollup": "^2.77.2",
     "typescript": "^4.7.4"
+  },
+  "lint-staged": {
+    "**/*.{js,ts}": ["prettier --write", "eslint"],
+    "**/*.{md,json}": ["prettier --write"]
   }
 }
